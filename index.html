@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   
+    
+    <title>Blog Post</title>
+  </head>
+  <body style="padding: 5%;">
+    <h1>Your Blog</h1>
+    <h2>Total Blogs: <span id="blog-count">0</span></h2>
+    <form onsubmit="handleFormSubmit(event)">
+      <div style="flex: content; flex-direction: column">
+        <div >
+          <div style="margin:5px">
+            <label for="imgSource">Image:</label>
+            <input type="text" name="imgSource" id="imgSource" />
+          </div>
+          <div style="margin:5px">
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title" />
+          </div>
+          <div style="margin:5px">
+            <label for="description">Blog Description:</label>
+            <input type="text" name="description" id="description" />
+          </div>
+          <button type="submit">Post blog</button>
+        </div>
+      </div>
+    </form>
+  </body>
+  <script defer src="index.js"></script>
+</html>
